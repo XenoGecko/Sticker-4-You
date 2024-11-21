@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers4You-Location</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/location.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+                <ul class="navSide">
+                    <li class="navClose" onclick=hideSideNav()>
+                        <a><i class="ri-close-line"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html" class="navlink">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="store.html" class="navlink">Store</a>
+                    </li>
+
+                    <li>
+                        <a href="location.html" class="navlink">Location</a>
+                    </li>
+
+                    <li>
+                        <a href="aboutus.html" class="navlink">About Us</a>
+                    </li>
+                </ul>
+
+                <ul class="navlist">
+                    <li class="navLogo">
+                        <a href="../index.html" class="navlink">Stickers 4 You</a>
+                    </li>
+
+                    <li class="navOption">
+                        <a href="../index.html" class="navlink">Home</a>
+                    </li>
+
+                    <li class="navOption">
+                        <a href="store.html" class="navlink">Store</a>
+                    </li>
+
+                    <li class="navOption">
+                        <a href="location.html" class="navlink">Location</a>
+                    </li>
+
+                    <li class="navOption">
+                        <a href="aboutus.html" class="navlink">About Us</a>
+                    </li>
+
+                    <li class="navToggle" onclick=showSideNav()>
+                        <a><i class="ri-menu-line"></i></a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="visit">
+            <h1>Visit Us</h1>
+
+            <p>We'd love to meet you in person!</p>
+
+            <p>
+                Explore our physical space and experience the magic of generative AI creations up close. 
+                Whether you're a sticker collector, a plushie enthusiast, or just curious about how we blend art and technology, 
+                our store is the perfect place to connect, discover, and shop.
+            </p>
+
+            <h3>Visit Us At:</h3>
+            <p><strong>123 Bread St, Sticker Ville</strong></p>
+            <img src="img/f747f480-2082-41d0-b49d-739505cbc658.jpg" alt="Storefront" class="visitImg">
+
+            <h3>Our Doors Are Open From:</h3>
+            <ul class="hours">
+                <li>
+                    <p><b>Monday - Friday:</b> 9:00 AM - 6:00 PM</p>
+                </li>
+                <li>
+                    <p><b>Saturday:</b> 10:00 AM - 4:00 PM</p>
+                </li>
+                <li>
+                    <p><b>Sunday: Closed</b></p>
+                </li>
+            </ul>
+
+            <h3>What To Expect:</h3>
+            <ul class="expect">
+                <li>
+                    <p><b>Interactive Displays:</b> See how generative AI designs come to life.</p>
+                </li>
+                <li>
+                    <p><b>Exclusive In-Store Items:</b> Shop one-of-a-kind products you won't find online.</p>
+                </li>
+                <li>
+                    <p><b>Workshops & Events:</b> Join us for creative sessions and special community events.</p>
+                </li>
+            </ul>
+
+            <p>We can't wait to welcome you and share the joy of our creations in person. Come say hello and take a piece of the magic home!</p>
+
+            <div class="help">
+                <p>If you need help finding us or have a question?, 
+                    don't hesitate to call at <strong>+1 (868) 555 7789</strong>, 
+                    email us at <strong>stickers4u@gmail.com</strong>.</p>
+                <p>You can also Fill out the form below, and we'll get back to you.</p>
+            </div>
+
+            <form class="contactForm" id="contact_Form" onsubmit="return validateForm(event)">
+                <div class="formGroup">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <small class="error-message" id="nameError"></small>
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <small class="error-message" id="emailError"></small>
+                </div>
+                <div class="formGroup">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address">
+                    <small class="error-message" id="addressError"></small>
+                </div>
+                <div class="formGroup">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                    <small class="error-message" id="phoneError"></small>
+                </div>
+                <div class="formGroup">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..."></textarea>
+                    <small class="error-message" id="messageError"></small>
+                </div>
+                <button type="submit" class="contactButton">Send Message</button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerSection">
+                <h3 class="footerTitle">Quick Links</h3>
+                <ul class="footerLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <h3 class="footerTitle">Contact Us</h3>
+                <p>Email: stickers4u@gmail.com</p>
+                <p>Phone: +1 (868) 555 7789</p>
+                <p>Address: 123 Bread St, Sticker Ville</p>
+            </div>
+            <div class="footerSection">
+                <h3 class="footerTitle">Follow Us</h3>
+                <div class="socials">
+                    <a href="#" class="socials"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#" class="socials"><i class="ri-twitter-line"></i></a>
+                    <a href="#" class="socials"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="socials"><i class="ri-linkedin-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerEnd">
+            <p>&copy; 2024 Bread Bank. All rights reserved.</p>
+            <p>All images used are of free use.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>  
+</body>
+</html>

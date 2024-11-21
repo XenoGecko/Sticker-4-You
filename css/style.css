@@ -1,0 +1,210 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap');
+
+p, a, span{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+}
+
+h1, h3, button, label{
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FBFAF5;
+}
+
+body{
+    background-color: #8DCDF8;
+}
+
+main{
+    margin-top: 60px;
+    padding: 20px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FBFAF5;
+    padding: 0 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: color 0.3s ease
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #8DCDF8;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #F88CAE;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.navSide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #FBFAF5;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 3px solid #F88CAE;
+}
+
+.navSide li, a{
+    width: 100%;
+}
+
+.navClose{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navToggle{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .navOption{
+        display: none;
+    }
+    .navToggle{
+        display: block;
+    }
+}
+
+@media (max-width: 400px){
+    .navSide{
+       width: 100%;
+    }
+}
+
+/* Footer */
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerSection{
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footerTitle{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ff6f61;
+}
+
+.footerLinks{
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li{
+    margin: 5px 0;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footerLinks a:hover{
+    color: #F88CAE;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.socials{
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.socials:hover{
+    color: #F88CAE;
+}
+
+.footerEnd{
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    color: #bbb;
+}
+
+@media (max-width: 800px) {
+    .footerContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerSection{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

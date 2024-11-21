@@ -1,0 +1,117 @@
+.container{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+.stickersStore, .plushStore{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: #FBFAF5;
+    border: 2px solid #F88CAE;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stickersStore{
+    justify-content: space-between;
+    margin-right: auto;
+}
+
+.stickersStore:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.plushStore{
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.plushStore:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.stickersStore .stickerHero img{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.plushStore{
+    flex-direction: row-reverse;
+}
+
+.plushStore .plushHero img{
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+}
+
+.stickersStore .storeContent, 
+.plushStore .storeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.storeTitle h1{
+    font-size: 2rem;
+    color: #333;
+}
+
+.storeDescription p{
+    font-size: 1rem;
+    color: #555;
+}
+
+.storeButton button{
+    justify-content: center;
+    background-color: #F88CAE;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.storeButton button:hover {
+    background-color: #ff6f61;
+}
+
+@media (max-width: 800px) {
+    .stickersStore, .plushStore {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stickersStore .stickerHero img, 
+    .plushStore .plushHero img {
+        max-width: 100%;
+    }
+
+    .storeContent {
+        text-align: center;
+    }
+}
+
+.storeTitle{
+    background: linear-gradient(to right, #8DCDF8, #F88CAE, #ff6f61);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}

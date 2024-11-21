@@ -1,0 +1,65 @@
+/* Home Page */
+.welcome{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.homeText{
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (width <= 800px) {
+    .homeTitle{
+        text-align: center;
+    }
+}
+
+.homeTitle {
+    font-size: 4rem;
+    color: #FBFAF5;
+}
+
+.homeTextDescription {
+    margin-top: 10px;
+    font-size: 1.15rem;
+    color: #FBFAF5;
+}
+
+.homeImg{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.homeImg img{
+    width: 400px;
+    height: auto;
+}
+
+.homeButton{
+    justify-content: center;
+    background-color: #F88CAE;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.homeButton:hover {
+    background-color: #ff6f61;
+}
